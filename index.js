@@ -9,6 +9,8 @@ async function mainMenu() {
     choices: [
       'View all departments',
       'View employees by department',
+      'Update employee managers', // Add a new option
+      'View employees by manager', // Add a new option
       'Exit'
     ]
   });
@@ -20,13 +22,18 @@ async function mainMenu() {
     case 'View employees by department':
       await viewEmployeesByDepartment();
       break;
+    case 'Update employee managers':
+      await updateEmployeeManagers(); // Call the function to update employee managers
+      break;
+    case 'View employees by manager':
+      await viewEmployeesByManager(); // Call the function to view employees by manager
+      break;
     case 'Exit':
       console.log('Goodbye!');
       pool.end(); // Close the database connection
       return;
   }
 }
-
 async function viewDepartments() {
   try {
     const [departments] = await pool.query('SELECT * FROM department');
@@ -64,3 +71,4 @@ async function viewEmployeesByDepartment() {
 }
 
 mainMenu();
+
