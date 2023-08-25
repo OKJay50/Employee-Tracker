@@ -38,10 +38,6 @@ Developed for business owners to easily view and manage departments, roles, and 
 3. Run the application: `node index.js`
 4. Follow the prompts to interact with the Employee Tracker.
 
-## Walkthrough Video
-
-[Watch the Walkthrough Video](#) <!-- Add the link to your walkthrough video -->
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
