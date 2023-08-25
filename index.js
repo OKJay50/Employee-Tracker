@@ -9,8 +9,8 @@ async function mainMenu() {
     choices: [
       'View all departments',
       'View employees by department',
-      'Update employee managers', // Add a new option
-      'View employees by manager', // Add a new option
+      'Update employee managers',
+      'View employees by manager',
       'Exit'
     ]
   });
@@ -23,10 +23,10 @@ async function mainMenu() {
       await viewEmployeesByDepartment();
       break;
     case 'Update employee managers':
-      await updateEmployeeManagers(); // Call the function to update employee managers
+      await updateEmployeeManagers();
       break;
     case 'View employees by manager':
-      await viewEmployeesByManager(); // Call the function to view employees by manager
+      await viewEmployeesByManager();
       break;
     case 'Exit':
       console.log('Goodbye!');
@@ -34,6 +34,7 @@ async function mainMenu() {
       return;
   }
 }
+
 async function viewDepartments() {
   try {
     const [departments] = await pool.query('SELECT * FROM department');
@@ -64,6 +65,27 @@ async function viewEmployeesByDepartment() {
       [departmentId]
     );
     console.table(employees);
+  } catch (error) {
+    console.error('An error occurred:', error);
+  }
+  mainMenu();
+}
+
+async function updateEmployeeManagers() {
+  try {
+    // Implement the logic to update employee managers here
+    // Prompt the user to select an employee to update, then select a new manager
+    // Update the manager_id in the employee table
+  } catch (error) {
+    console.error('An error occurred:', error);
+  }
+  mainMenu();
+}
+
+async function viewEmployeesByManager() {
+  try {
+    // Implement the logic to view employees by manager here
+    // Prompt the user to select a manager, then display employees reporting to that manager
   } catch (error) {
     console.error('An error occurred:', error);
   }
