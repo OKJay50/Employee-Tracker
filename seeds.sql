@@ -1,3 +1,5 @@
+USE employee_db;
+
 -- Insert departments
 INSERT INTO department (id, name) VALUES
   (1, 'HR'),
