@@ -48,4 +48,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Questions
 
-If you have any questions or need assistance, please feel free to [contact me](mailto:demasse1125@gmail.com). You can also visit my GitHub profile: [YourGitHubUsername](https://github.com/OKJay50).
+If you have any questions or need assistance, please feel free to [contact me](mailto:demasse1125@gmail.com). You can also visit my GitHub profile: [OKJay50](https://github.com/OKJay50).
