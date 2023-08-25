@@ -8,7 +8,6 @@ An Employee Tracker command-line application that allows you to manage a company
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Walkthrough Video](#walkthrough-video)
 - [License](#license)
 - [Questions](#questions)
 
